@@ -8,6 +8,9 @@ using namespace std;
 
 const int SIZE = 4; // Global variable for matrix size
 
+// Lab was finished before Friday's session
+// So input is from file instead of user as stated in the beginning to the session
+
 class Matrix {
 private:
   int data[SIZE][SIZE];  // 2D array for matrix data (using int for simplicity)
