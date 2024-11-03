@@ -75,7 +75,9 @@ public:
     Matrix result;
     for (int i = 0; i < SIZE; i++) {
         for (int j = 0; j < SIZE; j++) {
-            result.data[i][j] = data[i][j] * other.data[i][j];
+            for (int k = 0; k < SIZE; k++) {
+                result.data[i][j] += data[i][k] * other.data[k][j];
+            }
         }
     }
     return result;
